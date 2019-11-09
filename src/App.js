@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function App() {
+const App = props => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Hello Every One </h1>
+      <h2> i am {props.name}</h2>
+      <h3>i lived in {props.city}</h3>
+      <p>
+        i have complete {props.course} from {props.college} in {props.branch}
+        branch .
+      </p>
+      <p> i have completed my 12 th from {props.interschool} .</p>
     </div>
   );
-}
+};
 
 export default App;
